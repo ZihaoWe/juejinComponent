@@ -1,14 +1,12 @@
 <script setup>
 import hotListItem from './hotListItem.vue';
-import { useCounterStore } from '../stores/counter.js'
-
- const store = useCounterStore()
+import data from '../mock/counter.js'
 </script>
 
 <template>
     <div class="listContainer flex h-40 w-auto rounded bg-white">
         <div class="itemList flex flex-row divide-x py-4">
-            <hotListItem v-for="(value,index) in store.hotListItems"
+            <hotListItem v-for="(value,index) in data.data"
                 :key="index"
                 :index="index"
                 :title=value.title

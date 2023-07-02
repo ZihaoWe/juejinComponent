@@ -1,8 +1,5 @@
-import { reactive } from 'vue'
-import { defineStore } from 'pinia'
-
-export const useCounterStore = defineStore('counter', () => {
-  const hotListItems =reactive([
+export default {
+   "data":[
     {
       icon:"/src/assets/hotIcon1.png",
       articleNum:true,
@@ -32,7 +29,5 @@ export const useCounterStore = defineStore('counter', () => {
         "webGL入门和实践",
         "每日掘金"
       ]
-    },
-  ])
-  return { hotListItems }
-})
+    }]
+}
